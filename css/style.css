@@ -19,3 +19,21 @@ body {
 .main-header-block {
 	background-color: #3f3f3f;
 }
+.main-block {
+	float: left;
+}
+.header-navigation {
+	float: left;
+}
+.language-change-block {
+	float: left;
+}
+.nav li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.nav a {
+	text-decoration: none;
+}
