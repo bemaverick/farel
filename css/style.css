@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+body {
+	min-width: 920px;
+	background-color: #f3f3f3;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 900px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.clearfix::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+.main-header-block {
+	background-color: #3f3f3f;
+}
