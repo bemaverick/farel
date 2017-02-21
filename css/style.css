@@ -107,3 +107,258 @@ body {
 	background-color: #00afce;
 }
 
+.main-title {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 31px;
+	line-height: 44px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 300;
+	margin: 40px 0 5px 0;
+}
+.main .info {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 20px;
+	line-height: 26px;
+	color: #6c6c6c;
+	text-align: center;
+	font-weight: 300;
+	margin:0;
+}
+.farel-eye-logo {
+	margin: 45px 0 125px 0;
+}
+.farel-eye-logo img {
+	width: 421px;
+	height: 421px;
+	display: block;
+	margin: 0 auto;
+	transform: : scale(1);
+}
+/*.farel-eye-logo img:hover {
+	transform: scale(1.2);
+	transition: transform 1s;
+} */
+
+.main{
+	position: relative;
+}
+.scroll-down {
+	position: absolute;
+	bottom: -80px;
+	left: 50%;
+	margin-left: -9px;
+
+}
+.farel-using figure {
+	margin: 34px 0 50px 70px;
+}
+.farel-using figure img {
+	display: block;
+	width: 448px;
+	margin: 0 auto;
+}
+.numeration-block,
+.instal-description,
+.instal-icon-block {
+	float: left;
+}
+.numeration-block {
+	width: 80px;
+	padding: 0 0 0 130px;
+}
+.first-step,
+.second-step,
+.third-step {
+	width: 45px;
+	height: 45px;
+	margin: 0 35px 55px 0;
+	border-radius: 50%;
+	background-color: #f3f3f3;
+	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,175,206,1);
+	-moz-box-shadow: inset 0px 0px 0px 1px rgba(0,175,206,1);
+	box-shadow: inset 0px 0px 0px 1px rgba(0,175,206,1);
+	font-size: 30px;
+	line-height: 45px;
+	text-align: center;
+	color: #00afce;
+	font-weight: 300;
+	position: relative;
+	z-index: 10;
+}
+.first-step::before,
+.second-step::before,
+.first-step::after,
+.second-step::after {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #00afce;
+	z-index: 100;
+}
+.first-step::before,
+.second-step::before {
+	bottom: -21px;
+	left: 19px;
+}
+.first-step::after,
+.second-step::after {
+	bottom: -34px;
+	left: 19px;
+}
+
+
+.instal-description {
+	width: 380px;
+}
+.instal-description p {
+	font-size: 16px;
+	line-height: 45px;
+	margin-top: 0;
+	margin-bottom: 55px;
+	font-weight: 400;
+}
+.instal-description span {
+	font-size: 16px;
+	line-height: 45px;
+	color: #00afce;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.instal-icon-block {
+	width: 310px;
+	margin-bottom: : 60px;
+}
+.instal-icon-block div {
+	width: 290px;
+	height: 45px;
+	margin: 0 0 55px 20px;
+}
+.instal-icon-block img {
+	text-align: left;
+}
+.instal-link-block {
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+.instal-link-block a {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 203px;
+	transform: scale(1);
+}
+.instal-link-block a:first-child {
+	margin-left: 197px;
+	margin-right: 50px
+}
+.instal-link-block a:last-child {
+	margin-right: 192px;
+	margin-left: 55px;
+}
+.instal-link-block a:hover {
+	transform: scale(0.9);
+	transition: transform .5s;
+}
+.advert-info {
+	padding: 30px 0 35px 0;
+	background-color: #3f3f3f;
+}
+.advert-title {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 23px;
+	color: #fff;
+	margin: 0 50px 0 50px;
+	padding: 0 10px;
+}
+
+.company-links-title {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 34px;
+	margin: 35px 0 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.link-block {
+	width: 800px;
+	margin: 0 auto;
+}
+.link-block li {
+	padding: 55px 37px 40px 0px;
+}
+.link-block li:nth-child(3n) {
+	padding-right: 0px;
+}
+.link-block li a:hover {
+	transform: scale(0.9);
+	transition: transform .5s;
+}
+.mobile-using {
+	background-color: #3f3f3f;
+	padding: 35px 0;
+}
+.using-info {
+	margin: 0;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 26px;
+	color: #fff; 
+	line-height: 34px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	position: relative;
+	z-index: 5;
+}
+.using-info::before,
+.using-info::after {
+	position: absolute;
+	display: block;
+	content: "";
+}
+.using-info::before {
+	width: 47px;
+	height: 47px;
+	border-radius: 50%;
+	top: -6px;
+	right: 80px;
+	background-color: #f3f3f3;
+	z-index: 10;
+}
+.using-info::after {
+	top: 6px;
+	right: 90px;
+	width: 0;
+    height: 0;
+    border-left: 21px solid #00afce;
+    border-bottom: 12px solid transparent;
+    border-top: 12px solid transparent;
+    z-index: 15;
+}
+
+
+
+.screen-using .using-info {
+	color: #000;
+}
+.screen-using .using-info::before {
+	background-color: #3f3f3f
+}
+
+
+
+
+
+.main-footer {
+	background-color: #3f3f3f;
+	border-left: 21px solid #;
+}
+
+
