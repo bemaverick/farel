@@ -464,18 +464,174 @@ body {
 	padding-left: 20px;
 }
 
-
-
-
 .main-footer {
 	background-color: #3f3f3f;
-	border-left: 21px solid #;
+	padding: 20px 0 0 0;
 }
 .contanct-title {
 	margin: 0;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
 }
+
+.contact-block,
+.social-network-block,
+.feed-back-block {
+	float: left;
+	width: 300px;
+}
+.footer-block-title {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 20px;
+	color: #00afce;
+	margin: 15px 0;
+	padding: 0 0 0 70px;
+}
+.social-network li,
+.contact li {
+	display: block;
+	padding: 0 0 20px 70px; 
+	position: relative;
+	z-index: 5;
+}
+
+.social-network li::before,
+.contact li::before {
+	display: block;
+	content: "";
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	z-index: 10;
+	top: -10px;
+	left: 20px;
+}
+.contact-email::before {
+	background: url(../img/envelope.png) no-repeat center;
+}
+.contact-number::before {
+	background: url(../img/phone.png) no-repeat center;
+}
+.contact-address::before {
+	background: url(../img/location.png) no-repeat center;
+}
+.social-facebook::before {
+	background: url(../img/fbook.png) no-repeat center;
+}
+.social-tweeter::before {
+	background: url(../img/tweet.png) no-repeat center;
+}
+.social-instagram::before {
+	background: url(../img/insta.png) no-repeat center;
+}
+
+.social-network li a,
+.contact li p {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 300;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.feed-back-block label {
+	display: none;
+}
+.feed-back-block form {
+	padding-left: 60px;
+	margin-bottom: 50px;
+}
+.feed-back-block input {
+	display: block;
+	width: 216px;
+	height: 26px;
+	border: none;
+	line-height: 26px;
+	font-size: 15px;
+	font-weight: 300;
+	color: #000;
+	margin: 0 0 10px 0;
+	padding: 0 10px;
+	border-radius: 2px;
+	outline: none;
+	border: 2px solid #fff;
+}
+.feed-back-block input:hover {
+	border: 2px solid #00afce;
+}
+
+
+input[name="name"]::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="name"]::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="name"]:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="name"]:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="name"]:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.7s ease;}
+input[name="name"]:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.7s ease;}
+input[name="name"]:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.7s ease;}
+input[name="name"]:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.7s ease;}
+
+input[name="email"]::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="email"]::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="email"]:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="email"]:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="email"]:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.7s ease;}
+input[name="email"]:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.7s ease;}
+input[name="email"]:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.7s ease;}
+input[name="email"]:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.7s ease;}
+
+input[name="phone"]::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="phone"]::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="phone"]:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="phone"]:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.7s ease;}
+input[name="phone"]:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.7s ease;}
+input[name="phone"]:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.7s ease;}
+input[name="phone"]:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.7s ease;}
+input[name="phone"]:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.7s ease;}
+
+input[placeholder] {
+	text-overflow:ellipsis;
+}
+::-webkit-input-placeholder {color:#000;}
+::-moz-placeholder          {color:#000;}
+::-webkit-input-placeholder {color:#000;}
+::-moz-placeholder          {color:#000;}
+
+.btn {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	outline: none;
+}
+
+.btn-feedback {
+	display: block;
+	width: 160px;
+	background-color: #00afce;
+	color: #fff;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+	border-radius: 2px;
+}
+.btn-feedback:hover {
+	background-color: #0169ab;
+}
+.btn-feedback:active {
+	background-color: #0169ab;
+	-webkit-box-shadow: inset 0px 3px 0px 0px rgba(1,89,151,1);
+	-moz-box-shadow: inset 0px 3px 0px 0px rgba(1,89,151,1);
+	box-shadow: inset 0px 3px 0px 0px rgba(1,89,151,1);
+}
+
 .map {
 	background: url(../img/location.jpg) center no-repeat #b2c5d3;
 	min-height: 250px;
 }
+
 
