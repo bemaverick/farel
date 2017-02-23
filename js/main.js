@@ -7,10 +7,10 @@
     			var top = scrolledValue;
     		    //alert(scrolledValue);
     			var scr = setInterval(function () {	
-					top = top + 5;
+					top = top + 10;
 					console.log(top);
 				    window.scrollTo(scrolledValue, top);	    
-					if (top > 716) {
+					if (top > 600+ scrolledValue) {
 					 	    clearInterval(scr);
 					    }
 					}, 5);
