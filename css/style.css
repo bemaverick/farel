@@ -19,8 +19,16 @@ body {
 	clear: both;
 	content: "";
 }
+.main-header-block-hollow {
+	height: 60px;
+}
+
 .main-header-block {
 	background-color: #3f3f3f;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 }
 .main-block {
 	float: left;
@@ -657,7 +665,7 @@ input[placeholder] {
 */
 .map {
 	background: url(../img/location.jpg) center no-repeat #b2c5d3;
-	min-height: 250px;
+	min-height: 350px;
 }
 
 .feed-back-block button {
