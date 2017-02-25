@@ -25,7 +25,7 @@ var contact=document.querySelector(".contact-link");
 				top = top + 20;
 				console.log(top);
 				window.scrollTo(scrolledValue, top);	    
-				if (top > 3150) {
+				if (top > 3135) {
 			    clearInterval(scr);
 				}
 			}, 5);
@@ -34,8 +34,8 @@ var contact=document.querySelector(".contact-link");
 	
 
     function initialize() {
-	    var x = 50.473869;
-	    var y = 30.497340;
+	    var x = 50.473773;
+	    var y = 30.497345;
 	    var mapOptions = {
 	        zoom: 17,
 	        center: new google.maps.LatLng(x, y),
@@ -46,7 +46,7 @@ var contact=document.querySelector(".contact-link");
 	        document.querySelector(".map"),
 	        mapOptions
 	    );
-	    var image = "img/map-marker.png"; 
+	    var image = "img/map-marker-2.png"; 
 	    var myLatLng = new google.maps.LatLng(x, y);
 	    var beachMarker = new google.maps.Marker({
 	        position: myLatLng,
@@ -55,3 +55,22 @@ var contact=document.querySelector(".contact-link");
 	    });
 }
 google.maps.event.addDomListener(window, "load", initialize);		
+
+var header=document.querySelector(".main-header-block");
+var headerHiddenBlock=document.querySelector(".main-header-block-hidden");
+
+
+window.addEventListener("scroll", function(event) {
+  
+    var top = this.scrollY;
+ // console.log(top);
+ // console.log(header);
+  if (top >= 100) {
+    header.classList.add("main-header-block-hollow");
+ 	headerHiddenBlock.classList.add("visible");
+} else {
+	header.classList.remove("main-header-block-hollow");
+	headerHiddenBlock.classList.remove("visible");
+}
+
+}, false);﻿
