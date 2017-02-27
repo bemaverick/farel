@@ -31,6 +31,29 @@ var contact=document.querySelector(".contact-link");
 			}, 5);
 
 	});
+
+var header=document.querySelector(".main-header-block");
+var headerHiddenBlock=document.querySelector(".main-header-block-hidden");
+
+
+window.addEventListener("scroll", function(event) {
+  
+    var top = this.scrollY;
+ // console.log(top);
+ // console.log(header);
+  if (top >= 100) {
+    header.classList.add("main-header-block-hollow");
+ 	headerHiddenBlock.classList.add("visible");
+} else {
+	header.classList.remove("main-header-block-hollow");
+	headerHiddenBlock.classList.remove("visible");
+}
+
+}, false);﻿
+
+
+
+
 	
 
     function initialize() {
@@ -56,21 +79,3 @@ var contact=document.querySelector(".contact-link");
 }
 google.maps.event.addDomListener(window, "load", initialize);		
 
-var header=document.querySelector(".main-header-block");
-var headerHiddenBlock=document.querySelector(".main-header-block-hidden");
-
-
-window.addEventListener("scroll", function(event) {
-  
-    var top = this.scrollY;
- // console.log(top);
- // console.log(header);
-  if (top >= 100) {
-    header.classList.add("main-header-block-hollow");
- 	headerHiddenBlock.classList.add("visible");
-} else {
-	header.classList.remove("main-header-block-hollow");
-	headerHiddenBlock.classList.remove("visible");
-}
-
-}, false);﻿
